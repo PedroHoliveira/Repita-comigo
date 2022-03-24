@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<script>
+/*1 - Escreva um algoritmo para ler 2 valores informados pelo usuário e se o segundo valor informado for ZERO, deve ser lido um novo valor, 
+ou seja, para o segundo valor não pode ser aceito o valor zero nem negativo e imprimir o resultado da divisão do primeiro valor lido
+pelo segundo valor lido.
+*/
+    var num1 = Number(prompt("Digite um número: "));
+    var num2 = Number(prompt("Digite outro número: "));
+
+    while (num2 <= 0) {
+        num2 = Number(prompt("Digite um novo valor para o segundo numero: "));
+    }
+    document.write("A divisão dos valores é de: " + num1 / num2);
+
+</script>
+</body>
+</html>
